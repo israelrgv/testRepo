@@ -1,0 +1,46 @@
+<html>
+  <head>
+      <!--script src="angular.js"></script-->            
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src="app.js"></script>
+  </head>
+   
+  <body ng-app="app" ng-controller="MainCtrl">
+      <div>
+          <input ng-model='nombre'><br/><br/>
+            Mi nombre es {{nombre}}<br/><br/>
+          <button ng-click="cambiarNombre()">Cambiar Nombre</button>
+      </div>
+      <div>
+          <br/><br/>
+          <input ng-model='expression'><br/><br/>
+          <!--input ng-model='expression1'>
+          <input ng-model='expression2'>
+          <input ng-model='operator'-->
+          
+          <button ng-click="concatDigit('1')">1</button>
+          <button ng-click="concatDigit('2')">2</button>
+          <button ng-click="concatDigit('3')">3</button>
+          <button ng-click="concatDigit('4')">4</button> <br/><br/>
+          
+          
+          <button ng-click="concatDigit('5')">5</button>
+          <button ng-click="concatDigit('6')">6</button>
+          <button ng-click="concatDigit('7')">7</button>
+          <button ng-click="concatDigit('8')">8</button> <br/><br/>
+                    
+          <button ng-click="concatDigit('9')">9</button>
+          <button ng-click="concatDigit('0')">0</button>          
+          <button ng-click="concatDigit('.')">.</button>
+          <button ng-click="calculate()">=</button> <br/><br/>
+          
+           
+          <button ng-click="operation('+')">+</button>
+          <button ng-click="operation('-')">-</button>          
+          <button ng-click="operation('*')">*</button>
+          <button ng-click="operation('/')">/</button> <br/><br/>
+          
+          <button ng-click="clearData()">C</button>          
+      </div>
+  </body>
+</html>
